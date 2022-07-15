@@ -1,0 +1,76 @@
+html {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: #E4E5E8;
+  color: #171A1A;
+  font-family: -apple-system, BlinkMacSystemFont,
+    'avenir next', avenir,
+    helvetica, 'helvetica neue',
+    ubuntu,
+    roboto, noto,
+    'segoe ui', arial,
+    sans-serif;
+}
+
+
+
+
+@font-face {
+  font-family: "Walter Neue Variable";
+  src: url("fonts/ABCWalterNeueVariable.woff2") format("woff2-variations"),
+    url("fonts/ABCWalterNeueVariable.woff") format("woff-variations"),
+    url("fonts/ABCWalterNeueVariable.ttf") format("truetype-variations");
+  font-weight: 300 700;
+}
+
+a {
+  /* cursor: ne-resize; */
+  text-decoration: none;
+}
+
+p {
+  font-family: "Walter Neue Variable";
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 16px;
+  font-family: "Walter Neue Variable";
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.lh-copy {
+  line-height: 1.4;
+}
+
+.soundcloud-frame {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.mw6 {
+  max-width: 20rem;
+}
+
+
+canvas {
+  display: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+
+}
