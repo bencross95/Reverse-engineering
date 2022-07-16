@@ -1,5 +1,5 @@
-var blobWidth = 60;
-var blobHeight = 60;
+var blobWidth = 30;
+var blobHeight = 30;
 var blobX = Math.floor(Math.random() * window.innerWidth) - (blobWidth / 2);
 var blobY = Math.floor(Math.random() * window.innerHeight) - (blobHeight / 2);
 
@@ -11,45 +11,18 @@ function setup() {
   canvas.position(0, 0);
   canvas.style('z-index', '-1')
   image1 = loadImage('images/mouseimg1.png');
+  background(228, 229, 232);
 }
 
 function draw() {
-  background(228, 229, 232);
+  var var1 = map(mouseX, 0, width, 0, 255);
+  var var2 = map(mouseY, 0, height, 0, 255);
 
-
-  if (directionX == 1) {
-    if (blobX <= window.innerWidth - 60 / 2) {
-      blobX++;
-    } else {
-      directionX = 0;
-    }
-  } else {
-    if (blobX >= 60 / 2) {
-      blobX--;
-    } else {
-      directionX = 1;
-    }
-  }
-
-  if (directionY == 1) {
-    if (blobY <= window.innerHeight - 60 / 2) {
-      blobY++;
-    } else {
-      directionY = 0;
-    }
-  } else {
-    if (blobY >= 60 / 2) {
-      blobY--;
-    } else {
-      directionY = 1;
-    }
-  }
-
+  fill(255, var1, var2);
   noStroke();
-  fill(255, 20, 0);
-  // ellipse(blobX, blobY, blobWidth, blobHeight);
-  image( image1, blobX, blobY, blobWidth, blobHeight);
+  ellipse(mouseX, mouseY, 120, 120);
 }
+
 
 
 
