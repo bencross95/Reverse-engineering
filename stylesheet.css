@@ -4,26 +4,22 @@
 }
 
 html {
-  padding: 0;
+  /* padding: 0;
   margin: 0;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
+  /* padding: 0;
+  margin: 0; */
+  /* overflow: hidden; */
   background-color: #E4E5E8;
   color: #171A1A;
-  font-family: -apple-system, BlinkMacSystemFont,
-    'avenir next', avenir,
-    helvetica, 'helvetica neue',
-    ubuntu,
-    roboto, noto,
-    'segoe ui', arial,
-    sans-serif;
-  height: 100vh;
-  width: 100vw;
+  font-size: 16px;
+  font-family: "Walter Neue Variable";
+  text-transform: uppercase;
+  /* height: 100vh;
+  width: 100vw; */
 }
 
 @font-face {
@@ -44,12 +40,12 @@ a {
 }
 
 p {
-  font-family: "Walter Neue Variable";
-  font-weight: 550;
   font-size: 16px;
+  font-family: "Walter Neue Variable";
   line-height: 18px;
-  margin: 0;
   text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
 }
 
 h1 {
@@ -57,6 +53,7 @@ h1 {
   font-family: "Walter Neue Variable";
   margin: 0;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .lh-copy {
@@ -81,8 +78,6 @@ canvas {
   -o-filter: blur(20px);
   -ms-filter: blur(20px);
   filter: blur(20px);
-  /* width: 100px;
-  height: 100px; */
   background-color: #ccc;
   margin: -5px -10px -10px -5px;
 }
