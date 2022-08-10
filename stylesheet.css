@@ -56,6 +56,15 @@ h1 {
   font-weight: bold;
 }
 
+.longtext {
+  /* color:grey; */
+}
+
+.divider {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
 .lh-copy {
   line-height: 1.4;
 }
