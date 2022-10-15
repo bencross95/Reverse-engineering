@@ -16,22 +16,24 @@ body {
   background-color: #E4E5E8;
   color: #171A1A;
   font-size: 16px;
-  font-family: "Walter Neue Variable";
+  font-family: "NBArchitektStd bold";
   text-transform: uppercase;
+  font-weight: 700;
   /* height: 100vh;
   width: 100vw; */
 }
 
 @font-face {
-  font-family: "Walter Neue Variable";
-  src: url("fonts/ABCWalterNeueVariable.woff2") format("woff2-variations"),
-    url("fonts/ABCWalterNeueVariable.woff") format("woff-variations"),
-    url("fonts/ABCWalterNeueVariable.ttf") format("truetype-variations");
-  font-weight: 300 700;
+  font-family: "NBArchitektStd bold";
+  src: url("fonts/NBArchitektStd-Bold.woff2") format("woff2"), url("fonts/NBArchitektStd-Bold.woff") format("woff");
 }
 
 .black {
   color: #171A1A;
+}
+
+.text-dark {
+  text-shadow: 0.4px 0.4px 0px #000, -0.4px -0.4px 0px #000, 0.4px -0.4px 0px #000, -0.4px 0.4px 0px #000;
 }
 
 a {
@@ -40,59 +42,136 @@ a {
 }
 
 p {
-  font-size: 16px;
-  font-family: "Walter Neue Variable";
-  line-height: 18px;
+  font-family: "NBArchitektStd bold";
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 3%;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0;
 }
 
 h1 {
-  font-size: 16px;
-  font-family: "Walter Neue Variable";
+  /* font-size: 16px;
+  font-family: "NBArchitektStd bold";
   margin: 0;
   text-transform: uppercase;
-  font-weight: bold;
-}
-
-.longtext {
-  /* color:grey; */
-}
-
-.divider {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-}
-
-.lh-copy {
-  line-height: 1.4;
-}
-
-.soundcloud-frame {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  padding-left: 10px;
+  font-weight: 700; */
 }
 
 .mw6 {
   max-width: 20rem;
 }
 
-canvas {
-  display: block;
-  -webkit-filter: blur(20px);
-  -moz-filter: blur(20px);
-  -o-filter: blur(20px);
-  -ms-filter: blur(20px);
-  filter: blur(20px);
-  background-color: #E4E5E8;
-  margin: -5px -10px -10px -5px;
+.ui-section {
+  max-width: 387px;
+  width: 387px;
+  /* background-color: grey; */
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  float: right;
 }
 
-@media (max-width: 40em) {
-  canvas {
-    display: none;
+.ui-div {
+  background-color: lightgrey;
+  border-radius: 4px;
+  position: relative;
+}
+
+.ui-div-top {
+  background: #000002;
+  border: 3px solid #313131;
+  border-radius: 4px;
+}
+
+.ui-top-lvl1 {
+  height: 26px;
+  background-color: #313131;
+  position: relative;
+}
+
+#abc-logo {
+  position: absolute;
+  top: 50%;
+  height: 15px;
+  margin-top: -7.5px;
+  margin-left: 4px;
+}
+
+.ui-top-lvl2 {
+  position: relative;
+  height: 26px;
+  background-color: #B7C68A;
+}
+
+.ui-top-lvl2-content {
+  display: flex;
+  justify-content: left;
+  padding-top: 2.5px;
+  margin-left: 4px;
+}
+
+.ui-top-lvl3 {
+  height: 28px;
+  position: relative;
+  /* background-color: #B7C68A; */
+}
+
+.tx {
+  height: 22px;
+  background-color: #504F52;
+  margin-top: 3px;
+  margin-right: 4px;
+  margin-left: 3px;
+  padding-top: 0.5px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.alpha {
+  height: 22px;
+  background-color: #B7C68A;
+  margin-top: 3px;
+  padding-top: 0.5px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.revv4 {
+  height: 22px;
+  background-color: #504F52;
+  margin-top: 3px;
+  margin-right: 3px;
+  padding-top: 0.5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: relative;
+}
+
+#lvl3-arrow {
+  height: 12px;
+  padding-top: 4px;
+  padding-left: 16px;
+}
+
+.ui-div-bottom {
+  margin-top: 6px;
+}
+
+@media (max-width: 440px) {
+  .ui-section {
+    width: 95vw;
+    /* background-color: grey; */
+    position: static;
+    top: 0px;
+    right: 0px;
+
+
+
+    float: right;
+    padding-top: 32px;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
   }
 }
