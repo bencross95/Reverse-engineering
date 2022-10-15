@@ -25,7 +25,6 @@
         <img src="images/abc-logo.svg" alt="" id="abc-logo">
       </div>
 
-
       <div class="ui-top-lvl2">
         <div class="ui-top-lvl2-content">
           <p class="text-dark pr3">secure</p>
@@ -34,37 +33,69 @@
         </div>
       </div>
 
-
       <div class="ui-top-lvl3">
         <div class="flex justify-between">
-
           <div class="flex">
-            <div class="tx text-dark">
+            <div class="tx">
               <p>TX</p>
             </div>
             <div class="alpha text-dark">
               <p>AlPHA</p>
             </div>
           </div>
-
           <div class="revv4 flex text-dark">
             <p>rev--v4</p>
             <img src="images/arrow-r.svg" alt="" id="lvl3-arrow">
           </div>
         </div>
-
       </div>
     </div>
 
 
 
-
-
-
-
-
     <div class="ui-div ui-div-bottom">
-      <div class="">
+      <div class="yellow-container">
+        <div class="tab-bar">
+          <button class="button-yellow tablink tab-button-on" onclick="openTab(event,'info')">Info</button>
+          <button class="button-yellow tablink" onclick="openTab(event,'lineup')">Lineup</button>
+          <button class="button-yellow tablink" onclick="openTab(event,'tickets')">Tickets</button>
+        </div>
+
+        <div class="tab" id="info">
+          <p class="tab-bar-text-large text-light">location: Ziegrastraße 11<br>Name: reverse engineering 4</p>
+          <p class="tab-bar-text-large text-light">Sent via RC3G email<br>Gateway.</p>
+          <div class="tab-info-stats">
+            <p class="tab-info-stats-text">price: <span class="stats-span">5/10</span></p>
+            <p class="tab-info-stats-text">capacity: <span class="stats-span">100</span></p>
+          </div>
+        </div>
+
+        <div class="tab" id="lineup" style="display:none">
+          <p class="tab-bar-text-large text-light ">
+            <a href="#">Joanna oj</a><br>
+            <a href="#">Softworld</a> b2b <a href="#">windowseeker</a><br>
+            <a href="#">gabriel gifford</a><br>
+            <a href="#">Liquid Gold</a>
+          </p>
+          <div class="tab-info-stats">
+            <p class="tab-info-stats-text">price: <span class="stats-span">5/10</span></p>
+            <p class="tab-info-stats-text">capacity: <span class="stats-span">100</span></p>
+          </div>
+        </div>
+
+        <div class="tab" id="tickets" style="display:none">
+          <a href="#">
+            <div class="flex">
+              <img id="large-ticket-arrow" src="images/large-arrow-right.svg" alt="">
+              <p class="tab-bar-text-large text-light">Online tickets</p>
+            </div>
+          </a>
+          <p class="tab-bar-text-large text-light">tickets will be available on the door</p>
+          <div class="tab-info-stats">
+            <p class="tab-info-stats-text">price: <span class="stats-span">5/10</span></p>
+            <p class="tab-info-stats-text">capacity: <span class="stats-span">100</span></p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -73,6 +104,6 @@
 
 
 </body>
-<!-- <script type="text/javascript" src="script.js"></script> -->
+<script type="text/javascript" src="script.js"></script>
 
 </html>
