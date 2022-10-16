@@ -242,6 +242,13 @@ h1 {
   /* color: black; */
 }
 
+.button-yellow:focus {
+  opacity: 1;
+  /* background-color: #4B4C1A; */
+  /* color: black; */
+}
+
+
 .tab-spacer {
   width: 2px;
   color: #FAFF54;
