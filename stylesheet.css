@@ -201,13 +201,13 @@ h1 {
   /* padding: 6px; */
 }
 
-
 .tab-bar {
   /* padding: 6px; */
   border-bottom: 2px solid #FAFF54;
   display: flex;
   justify-content: space-around;
-  margin-right: -2px
+  margin-right: -2px;
+  position: relative;
 }
 
 .button-yellow {
@@ -248,7 +248,6 @@ h1 {
   /* color: black; */
 }
 
-
 .tab-spacer {
   width: 2px;
   color: #FAFF54;
@@ -259,8 +258,6 @@ h1 {
   background-color: #FAFF54;
   text-shadow: 0.2px 0.2px 0px #000, -0.2px -0.2px 0px #000, 0.2px -0.2px 0px #000, -0.2px 0.2px 0px #000;
 }
-
-
 
 .tab-info-stats {
   display: flex;
@@ -288,6 +285,74 @@ h1 {
 #large-ticket-arrow {
   padding-left: 6px;
   padding-top: 9px;
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@-ms-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animated-circle-indicator {
+  position: absolute;
+  right: 9px;
+  top: 7px;
+  -moz-animation: blink normal 1s infinite ease-in-out;
+  -webkit-animation: blink normal 1s infinite ease-in-out;
+  -ms-animation: blink normal 1s infinite ease-in-out;
+  animation: blink normal 1s infinite ease-in-out;
 }
 
 @media (max-width: 440px) {
