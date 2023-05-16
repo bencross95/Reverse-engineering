@@ -153,17 +153,19 @@ h1 {
   padding-top: 0.5px;
   padding-left: 4px;
   padding-right: 4px;
+  border-radius: 1px;
   text-shadow: 0.2px 0.2px 0px #E3E3E3, -0.2px -0.2px 0px #E3E3E3, 0.2px -0.2px 0px #E3E3E3, -0.2px 0.2px 0px #E3E3E3;
 }
 
 .alpha {
   height: 22px;
-  background-color: #B7C68A;
+  background-color: #8ac6c1;
   color: #000;
   margin-top: 3px;
   padding-top: 0.5px;
   padding-left: 4px;
   padding-right: 4px;
+  border-radius: 1px;
 }
 
 .revv4 {
@@ -176,6 +178,7 @@ h1 {
   padding-left: 4px;
   padding-right: 4px;
   position: relative;
+  border-radius: 1px;
 }
 
 #lvl3-arrow {
@@ -208,6 +211,12 @@ h1 {
   justify-content: space-around;
   margin-right: -2px;
   position: relative;
+}
+
+.text-colour {
+  color: #E5554C;
+  text-shadow: 0.2px 0.2px 0px #E5554C, -0.2px -0.2px 0px #E5554C, 0.2px -0.2px 0px #E5554C, -0.2px 0.2px 0px #E5554C;
+  
 }
 
 .button-yellow {
@@ -359,6 +368,14 @@ h1 {
   -webkit-animation: blink normal 1s infinite ease-in-out;
   -ms-animation: blink normal 1s infinite ease-in-out;
   animation: blink normal 1s infinite ease-in-out;
+}
+
+
+.flashing-text {
+  -moz-animation: blink normal 1.5s infinite ease-in-out;
+  -webkit-animation: blink normal 1.5s infinite ease-in-out;
+  -ms-animation: blink normal 1.5s infinite ease-in-out;
+  animation: blink normal 1.5s infinite ease-in-out;
 }
 
 #instagram-link {
