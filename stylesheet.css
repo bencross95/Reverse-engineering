@@ -199,7 +199,8 @@ h1 {
   min-height: 40px;
   border: 2px solid #FAFF54;
   border-radius: 2px;
-  height: 188px;
+  /* height: 188px; */
+  height: 270px;
   position: relative;
   /* padding: 6px; */
 }
@@ -216,7 +217,11 @@ h1 {
 .text-colour {
   color: #E5554C;
   text-shadow: 0.2px 0.2px 0px #E5554C, -0.2px -0.2px 0px #E5554C, 0.2px -0.2px 0px #E5554C, -0.2px 0.2px 0px #E5554C;
-  
+}
+
+.text-colour2 {
+  color: #5397D5;
+  text-shadow: 0.2px 0.2px 0px #5397D5, -0.2px -0.2px 0px #5397D5, 0.2px -0.2px 0px #5397D5, -0.2px 0.2px 0px #5397D5;
 }
 
 .button-yellow {
