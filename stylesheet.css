@@ -192,6 +192,7 @@ h1 {
 }
 
 .ui-div-bottom {
+  opacity: 0;
   background: #000002;
   border: 3px solid #313131;
   border-radius: 4px;
