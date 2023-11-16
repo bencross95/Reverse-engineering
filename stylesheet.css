@@ -13,8 +13,8 @@ body {
   /* padding: 0;
   margin: 0; */
   /* overflow: hidden; */
-  background-color: #E4E5E8;
-  color: #171A1A;
+  background-color: #e4e5e8;
+  color: #171a1a;
   font-size: 16px;
   font-family: "NBArchitektStd bold";
   text-transform: uppercase;
@@ -29,15 +29,17 @@ body {
 }
 
 .black {
-  color: #171A1A;
+  color: #171a1a;
 }
 
 .text-dark {
-  text-shadow: 0.4px 0.4px 0px #000, -0.4px -0.4px 0px #000, 0.4px -0.4px 0px #000, -0.4px 0.4px 0px #000;
+  text-shadow: 0.4px 0.4px 0px #000, -0.4px -0.4px 0px #000,
+    0.4px -0.4px 0px #000, -0.4px 0.4px 0px #000;
 }
 
 .text-light {
-  text-shadow: 0.2px 0.2px 0px #fff, -0.2px -0.2px 0px #fff, 0.2px -0.2px 0px #fff, -0.2px 0.2px 0px #fff;
+  text-shadow: 0.2px 0.2px 0px #fff, -0.2px -0.2px 0px #fff,
+    0.2px -0.2px 0px #fff, -0.2px 0.2px 0px #fff;
 }
 
 a {
@@ -127,7 +129,7 @@ h1 {
 .ui-top-lvl2 {
   position: relative;
   height: 26px;
-  background-color: #B7C68A;
+  background-color: #b7c68a;
 }
 
 .ui-top-lvl2-content {
@@ -146,8 +148,8 @@ h1 {
 
 .tx {
   height: 22px;
-  background-color: #504F52;
-  color: #E3E3E3;
+  background-color: #504f52;
+  color: #e3e3e3;
   margin-top: 3px;
   margin-right: 4px;
   margin-left: 3px;
@@ -155,12 +157,13 @@ h1 {
   padding-left: 4px;
   padding-right: 4px;
   border-radius: 1px;
-  text-shadow: 0.2px 0.2px 0px #E3E3E3, -0.2px -0.2px 0px #E3E3E3, 0.2px -0.2px 0px #E3E3E3, -0.2px 0.2px 0px #E3E3E3;
+  text-shadow: 0.2px 0.2px 0px #e3e3e3, -0.2px -0.2px 0px #e3e3e3,
+    0.2px -0.2px 0px #e3e3e3, -0.2px 0.2px 0px #e3e3e3;
 }
 
 .alpha {
   height: 22px;
-  background-color: #504F52;
+  background-color: #504f52;
   color: #000;
   margin-top: 3px;
   padding-top: 0.5px;
@@ -171,7 +174,7 @@ h1 {
 
 .revv4 {
   height: 22px;
-  background-color: #504F52;
+  background-color: #504f52;
   color: #000;
   margin-top: 3px;
   margin-right: 3px;
@@ -198,7 +201,7 @@ h1 {
 
 .yellow-container {
   min-height: 40px;
-  border: 2px solid #FAFF54;
+  border: 2px solid #faff54;
   border-radius: 2px;
   /* height: 188px; */
   height: 270px;
@@ -208,7 +211,7 @@ h1 {
 
 .tab-bar {
   /* padding: 6px; */
-  border-bottom: 2px solid #FAFF54;
+  border-bottom: 2px solid #faff54;
   display: flex;
   justify-content: space-around;
   margin-right: -2px;
@@ -216,13 +219,15 @@ h1 {
 }
 
 .text-colour {
-  color: #E5554C;
-  text-shadow: 0.2px 0.2px 0px #E5554C, -0.2px -0.2px 0px #E5554C, 0.2px -0.2px 0px #E5554C, -0.2px 0.2px 0px #E5554C;
+  color: #e5554c;
+  text-shadow: 0.2px 0.2px 0px #e5554c, -0.2px -0.2px 0px #e5554c,
+    0.2px -0.2px 0px #e5554c, -0.2px 0.2px 0px #e5554c;
 }
 
 .text-colour2 {
-  color: #5397D5;
-  text-shadow: 0.2px 0.2px 0px #5397D5, -0.2px -0.2px 0px #5397D5, 0.2px -0.2px 0px #5397D5, -0.2px 0.2px 0px #5397D5;
+  color: #5397d5;
+  text-shadow: 0.2px 0.2px 0px #5397d5, -0.2px -0.2px 0px #5397d5,
+    0.2px -0.2px 0px #5397d5, -0.2px 0.2px 0px #5397d5;
 }
 
 .button-yellow {
@@ -237,12 +242,13 @@ h1 {
   padding-left: 6px;
   padding-bottom: 1px;
   border: 0px;
-  border-right: 2px solid #FAFF54;
+  border-right: 2px solid #faff54;
   background: #000;
   cursor: pointer;
-  color: #FAFF54;
+  color: #faff54;
   transition-duration: 0.2s;
-  text-shadow: 0.2px 0.2px 0px #FAFF54, -0.2px -0.2px 0px #FAFF54, 0.2px -0.2px 0px #FAFF54, -0.2px 0.2px 0px #FAFF54;
+  text-shadow: 0.2px 0.2px 0px #faff54, -0.2px -0.2px 0px #faff54,
+    0.2px -0.2px 0px #faff54, -0.2px 0.2px 0px #faff54;
 }
 
 .button-yellow:hover {
@@ -265,13 +271,14 @@ h1 {
 
 .tab-spacer {
   width: 2px;
-  color: #FAFF54;
+  color: #faff54;
 }
 
 .tab-button-on {
   color: #000;
-  background-color: #FAFF54;
-  text-shadow: 0.2px 0.2px 0px #000, -0.2px -0.2px 0px #000, 0.2px -0.2px 0px #000, -0.2px 0.2px 0px #000;
+  background-color: #faff54;
+  text-shadow: 0.2px 0.2px 0px #000, -0.2px -0.2px 0px #000,
+    0.2px -0.2px 0px #000, -0.2px 0.2px 0px #000;
 }
 
 .tab-info-stats {
@@ -289,12 +296,14 @@ h1 {
   letter-spacing: 3%;
   color: #fff;
   padding-right: 22px;
-  text-shadow: 0.2px 0.2px 0px #fff, -0.2px -0.2px 0px #fff, 0.2px -0.2px 0px #fff, -0.2px 0.2px 0px #fff;
+  text-shadow: 0.2px 0.2px 0px #fff, -0.2px -0.2px 0px #fff,
+    0.2px -0.2px 0px #fff, -0.2px 0.2px 0px #fff;
 }
 
 .stats-span {
-  color: #FAFF54;
-  text-shadow: 0.2px 0.2px 0px #FAFF54, -0.2px -0.2px 0px #FAFF54, 0.2px -0.2px 0px #FAFF54, -0.2px 0.2px 0px #FAFF54;
+  color: #faff54;
+  text-shadow: 0.2px 0.2px 0px #faff54, -0.2px -0.2px 0px #faff54,
+    0.2px -0.2px 0px #faff54, -0.2px 0.2px 0px #faff54;
 }
 
 #large-ticket-arrow {
@@ -306,7 +315,6 @@ h1 {
   padding-left: 6px;
   padding-top: 9px;
 }
-
 
 @-moz-keyframes blink {
   0% {
@@ -336,7 +344,6 @@ h1 {
   }
 }
 
-
 @-ms-keyframes blink {
   0% {
     opacity: 1;
@@ -350,7 +357,6 @@ h1 {
     opacity: 1;
   }
 }
-
 
 @keyframes blink {
   0% {
@@ -375,7 +381,6 @@ h1 {
   -ms-animation: blink normal 1s infinite ease-in-out;
   animation: blink normal 1s infinite ease-in-out;
 }
-
 
 .flashing-text {
   -moz-animation: blink normal 1.5s infinite ease-in-out;
