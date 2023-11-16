@@ -28,6 +28,19 @@ body {
   src: url("fonts/NBArchitektStdNeue-Bold.woff2") format("woff2");
 }
 
+#bgVideo {
+  display: inline;
+  position: fixed;
+  /* right: 0; */
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -5;
+  object-fit: cover;
+}
+
+
 .black {
   color: #171a1a;
 }
