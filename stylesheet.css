@@ -113,6 +113,17 @@ h1 {
   float: right;
 }
 
+.ui-section-bottom {
+  opacity: 0;
+  max-width: 387px;
+  width: 387px;
+  /* background-color: grey; */
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  float: right;
+}
+
 .ui-div {
   background-color: lightgrey;
   border-radius: 4px;
@@ -218,7 +229,9 @@ h1 {
   border: 2px solid #faff54;
   border-radius: 2px;
   /* height: 188px; */
-  height: 270px;
+  /* height: 284px; */
+  height: auto;
+  padding-bottom: 40px;
   position: relative;
   /* padding: 6px; */
 }
@@ -413,6 +426,18 @@ h1 {
     /* background-color: grey; */
     position: static;
     top: 0px;
+    right: 0px;
+    float: right;
+    padding-top: 2.5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .ui-section-bottom {
+    width: 95vw;
+    /* background-color: grey; */
+    position: static;
+    bottom: 0px;
     right: 0px;
     float: right;
     padding-top: 2.5vw;

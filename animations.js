@@ -11,6 +11,7 @@ tl.fromTo(
 );
 
 
+
 tl.fromTo(
   ".yellow-container",
   { y: 0, opacity: 0 },
@@ -28,7 +29,6 @@ tl.to(".yellow-container, .ui-div-bottom", {
 });
 
 
-
 tl.to(".ui-top-lvl2, .ui-top-lvl1, .ui-top-lvl3", {
   keyframes: {
     opacity: [0.5, 1, 0.9, 1],
@@ -38,3 +38,9 @@ tl.to(".ui-top-lvl2, .ui-top-lvl1, .ui-top-lvl3", {
   duration: 0.1
 });
 
+
+tl.fromTo(
+  ".ui-section-bottom",
+  { y: +20, opacity: 0 },
+  { duration: 0.5, delay: 0.5, y: 0, opacity: 1 }
+);
