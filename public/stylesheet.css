@@ -121,3 +121,29 @@ summary:hover {
   color: #0057FF;
 }
 
+p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+  font-family: NBArchitektStd Bold, monospace;
+  font-style: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+  font-family: NBArchitektStd Bold, monospace;
+  font-style: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+  font-family: NBArchitektStd Bold, monospace;
+  font-style: bold;
+  text-transform: uppercase;
+}
