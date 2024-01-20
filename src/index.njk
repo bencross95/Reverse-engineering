@@ -1,0 +1,137 @@
+---
+title: Reverse Engineering
+layout: 'base.njk'
+description: Berlin night and DIY art space
+---
+
+
+<ul class="tree">
+  <li>
+    <details>
+      <summary>Events</summary>
+      <ul>
+        {% for events in collections.events | reverse %}
+        <li>
+          <details>
+            <summary>{{ events.data.title }}</summary>
+            <ul>
+              <li><div class="list-date">{{ events.data.date }}</div></li>
+              <li><div class="list-content">{{ events.content }}</div></li>
+            </ul>
+          </details>
+        </li>
+        {% endfor %}
+      </ul>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary>Releases</summary>
+      <ul>
+        {% for releases in collections.releases | reverse %}
+        <li>
+          <details>
+            <summary>{{ releases.data.title }}</summary>
+            <ul>
+              <!-- <li><div class="list-date">{{ releases.data.date }}</div></li> -->
+              <li><div class="list-content">{{ releases.content }}</div></li>
+            </ul>
+          </details>
+        </li>
+        {% endfor %}
+      </ul>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary>Hardware</summary>
+      <ul>
+        {% for hardware in collections.releases | reverse %}
+        <li>
+          <details>
+            <summary>{{ hardware.data.title }}</summary>
+            <ul>
+              <li><div class="list-content">{{ hardware.content }}</div></li>
+            </ul>
+          </details>
+        </li>
+        {% endfor %}
+      </ul>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary>Recordings</summary>
+      <ul>
+        {% for recordings in collections.releases | reverse %}
+        <li>
+          <details>
+            <summary>{{ recordings.data.title }}</summary>
+            <ul>
+              <li><div class="list-date">{{ recordings.data.date }}</div></li>
+              <li><div class="list-content">{{ recordings.content }}</div></li>
+            </ul>
+          </details>
+        </li>
+        {% endfor %}
+      </ul>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary>Contact</summary>
+      <ul>
+        {% for contact in collections.contact %}
+        <li>
+          <details>
+            <summary>{{ contact.data.title }}</summary>
+            <ul>
+              <li><div class="list-content">{{ contact.content }}</div></li>
+            </ul>
+          </details>
+        </li>
+        {% endfor %}
+      </ul>
+    </details>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ul>
+  {% for Events in collections.Events %}
+    <li>{{ Events.data.title }}</li>
+  {% endfor %}
+  </ul> -->
+
+
+
+<!-- {% for collectionName, collectionItems in collections %}
+<ul class="tree">
+  <li>
+    <details>
+      <summary>{{ collectionName }}</summary>
+      <ul>
+        {% for item in collectionItems %}
+        <li>
+          <details>
+            <summary>{{ item.data.title }}</summary>
+            <ul>
+              <li>{{ item.data.date }}</li>
+            </ul>
+          </details>
+        </li>
+        {% endfor %}
+      </ul>
+    </details>
+  </li>
+</ul>
+{% endfor %} -->

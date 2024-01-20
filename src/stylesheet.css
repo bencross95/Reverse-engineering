@@ -1,0 +1,123 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: NBArchitektStd Bold;
+  src: url('/assets/fonts/NBArchitektStd-Bold.woff2') format('woff2');
+  font-display: swap;
+  font-weight: bold;
+}
+
+body {
+  font-size: 30px;
+  font-family: NBArchitektStd Bold, monospace;
+  font-style: bold;
+  text-transform: uppercase;
+  background-color: #0057FF;
+  color: white;
+}
+
+
+
+.tree {
+  --spacing: 24px;
+  --radius: -12px;
+  margin-left: -16px;
+  margin-top: 0px;
+  padding-left: 0px;
+  /* margin: 0; */
+}
+
+.tree li {
+  display: block;
+  position: relative;
+  padding-left: calc(2 * var(--spacing) - var(--radius));
+  /* padding-left: 48px; */
+  /* border-bottom: 2px solid #ffffff2b; */
+
+}
+
+.tree ul {
+  margin-left: calc(var(--radius) - var(--spacing));
+  padding-left: 0px;
+}
+
+.tree ul li {
+  border-left: 10px solid #ffffff;
+}
+
+.tree ul li:last-child {
+  border-color: transparent;
+}
+
+.tree ul li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(var(--spacing) / -1);
+  left: -10px;
+  width: calc(var(--spacing) + 10px);
+  height: calc(var(--spacing) + 10px);
+  border: solid #ffffff;
+  border-width: 0 0 10px 10px;
+}
+
+.tree summary {
+  display: block;
+  cursor: pointer;
+}
+
+.tree summary::marker,
+.tree summary::-webkit-details-marker {
+  display: none;
+}
+
+.tree summary:focus {
+  outline: none;
+}
+
+.tree summary:focus-visible{
+  outline : 1px dotted #000;
+}
+
+.tree li::after,
+.tree summary::before{
+  content       : '';
+  display       : block;
+  position      : absolute;
+  top           : 5px;
+  left          : 35px;
+  width         : 24px;
+  height        : 24px;
+  /* border-radius : 100%; */
+  /* background    : #ffffff41; */
+}
+
+.tree summary::before{
+  z-index    : 1;
+  background : rgba(255, 255, 255, 0) url('/assets/images/expand-collapse.svg') 0 0;
+}
+
+.tree details[open] > summary::before{
+  background-position : calc(-2 * var(--radius)) 0;
+}
+
+.list-content {
+  background-color: #ffffff;
+  color: #0057FF;
+  display: block;
+}
+
+.list-date {
+  background-color: #ffffff2b;
+  color: #ffffff;
+  display: block;
+}
+
+summary:hover {
+  background-color:#FFFFFF;
+  color: #0057FF;
+}
+
