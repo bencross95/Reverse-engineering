@@ -20,12 +20,11 @@ body {
 }
 
 
-
 .tree {
   --spacing: 24px;
   --radius: -12px;
   margin-left: -16px;
-  margin-top: 0px;
+  margin-top: 12px;
   padding-left: 0px;
   /* margin: 0; */
 }
