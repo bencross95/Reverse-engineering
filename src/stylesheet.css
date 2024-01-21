@@ -147,3 +147,35 @@ h2 {
   font-style: bold;
   text-transform: uppercase;
 }
+
+a {
+  background:url('/assets/images/link.svg') no-repeat left center;
+  padding-left:24px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #0057FF;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #0057FF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+hr {
+  padding: 0px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #0057FF;
+  border-top: 2px solid #0057FF;
+}
+

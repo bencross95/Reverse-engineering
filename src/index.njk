@@ -7,12 +7,12 @@ description: Berlin night and DIY art space
 
 <ul class="tree">
   <li>
-    <details open>
+    <details>
       <summary>Events</summary>
       <ul>
         {% for events in collections.events | reverse %}
         <li>
-          <details open>
+          <details>
             <summary>{{ events.data.title }}</summary>
             <ul>
               <li><div class="list-date">{{ events.data.date | postDate }}</div></li>
@@ -46,7 +46,7 @@ description: Berlin night and DIY art space
     <details>
       <summary>Hardware</summary>
       <ul>
-        {% for hardware in collections.releases | reverse %}
+        {% for hardware in collections.hardware | reverse %}
         <li>
           <details>
             <summary>{{ hardware.data.title }}</summary>
@@ -63,12 +63,12 @@ description: Berlin night and DIY art space
     <details>
       <summary>Recordings</summary>
       <ul>
-        {% for recordings in collections.releases | reverse %}
+        {% for recordings in collections.recordings | reverse %}
         <li>
           <details>
-            <summary>{{ recordings.data.title }}</summary>
+            <summary>{{ recordings.data.date | postDate }} / {{ recordings.data.title }}</summary>
             <ul>
-              <li><div class="list-date">{{ recordings.data.date | postDate }}</div></li>
+              <!-- <li><div class="list-date">{{ recordings.data.date | postDate }}</div></li> -->
               <li><div class="list-content">{{ recordings.templateContent | safe }}</div></li>
             </ul>
           </details>
