@@ -79,7 +79,7 @@ body {
 }
 
 .tree summary:focus-visible{
-  outline : 1px dotted #000;
+  outline : 2px dashed #FFFFFF;
 }
 
 .tree li::after,
@@ -116,10 +116,19 @@ body {
   display: block;
 }
 
-summary:hover {
+summary:active {
   background-color:#FFFFFF;
   color: #0057FF;
 }
+
+
+@media (hover: hover) {
+  summary:hover {
+    background-color:#FFFFFF;
+    color: #0057FF;
+  }
+}
+
 
 p {
   margin: 0px;
@@ -179,3 +188,8 @@ hr {
   border-top: 2px solid #0057FF;
 }
 
+
+/* 
+summary:focus-visible {
+  outline: 4px dashed darkorange;
+} */
