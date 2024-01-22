@@ -9,7 +9,7 @@ tl.to("summary", {
     delay: 0,
     duration: 0.01,
     stagger: 0, // 0.1 seconds between when each ".box" element starts animating
-  });
+});
   
 
 tl.to("summary", {

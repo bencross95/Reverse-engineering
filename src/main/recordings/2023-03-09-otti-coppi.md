@@ -1,5 +1,5 @@
 ---
-title: Otti @ Coppi
+title: Otti
 description: test
 layout: 'base.njk'
 date: 2023-03-09

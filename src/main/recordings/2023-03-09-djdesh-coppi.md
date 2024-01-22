@@ -1,5 +1,5 @@
 ---
-title: DJ Desh @ Coppi
+title: DJ Desh
 description: test
 layout: 'base.njk'
 date: 2023-03-09

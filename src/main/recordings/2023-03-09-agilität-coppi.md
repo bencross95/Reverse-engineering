@@ -1,5 +1,5 @@
 ---
-title: Agilität @ Coppi
+title: Agilität
 description: test
 layout: 'base.njk'
 date: 2023-03-09

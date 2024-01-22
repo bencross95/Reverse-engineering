@@ -1,5 +1,5 @@
 ---
-title: Gabriel Gifford B2B Glaucoma @ Coppi
+title: Gabriel Gifford B2B Glaucoma
 description: test
 layout: 'base.njk'
 date: 2023-03-09
