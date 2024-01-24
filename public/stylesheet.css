@@ -66,6 +66,7 @@ body {
 .tree summary {
   display: block;
   cursor: pointer;
+  visibility: hidden;
 }
 
 .tree summary::marker,
