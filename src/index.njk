@@ -1,7 +1,7 @@
 ---
 title: Reverse Engineering
 layout: 'base.njk'
-description: Berlin based night, label and DIY art space
+description: Berlin based party, label and DIY art space
 ---
 
 
@@ -26,12 +26,12 @@ description: Berlin based night, label and DIY art space
   </li>
   <li>
     <details open>
-      <summary><h1>Releases</h1></summary>
+      <summary><h2>Releases</h2></summary>
       <ul>
         {% for releases in collections.releases | reverse %}
         <li>
           <details>
-            <summary><h2>{{ releases.data.title }}</h2></summary>
+            <summary><h3>{{ releases.data.title }}</h3></summary>
             <ul>
               <!-- <li><div class="list-date">{{ releases.data.date }}</div></li> -->
               <li><div class="list-content">{{ releases.templateContent | safe }}</div></li>
@@ -44,12 +44,12 @@ description: Berlin based night, label and DIY art space
   </li>
   <li>
     <details open>
-      <summary><h1>Hardware</h1></summary>
+      <summary><h2>Hardware</h2></summary>
       <ul>
         {% for hardware in collections.hardware | reverse %}
         <li>
           <details>
-            <summary><h2>{{ hardware.data.title }}</h2></summary>
+            <summary><h3>{{ hardware.data.title }}</h3></summary>
             <ul>
               <li><div class="list-content">{{ hardware.templateContent | safe }}</div></li>
             </ul>
@@ -61,12 +61,12 @@ description: Berlin based night, label and DIY art space
   </li>
   <li>
     <details open>
-      <summary><h1>Recordings</h1></summary>
+      <summary><h2>Recordings</h2></summary>
       <ul>
         {% for recordings in collections.recordings | reverse %}
         <li>
           <details>
-            <summary><h2>{{ recordings.data.date | postDate }} / {{ recordings.data.title }}</h2></summary>
+            <summary><h3>{{ recordings.data.date | postDate }} / {{ recordings.data.title }}</h3></summary>
             <ul>
               <!-- <li><div class="list-date">{{ recordings.data.date | postDate }}</div></li> -->
               <li><div class="list-content">{{ recordings.templateContent | safe }}</div></li>
@@ -79,12 +79,12 @@ description: Berlin based night, label and DIY art space
   </li>
   <li>
     <details open>
-      <summary><h1>Contact</h1></summary>
+      <summary><h2>Contact</h2></summary>
       <ul>
         {% for contact in collections.contact %}
         <li>
           <details>
-            <summary><h2>{{ contact.data.title }}</h2></summary>
+            <summary><h3>{{ contact.data.title }}</h3></summary>
             <ul>
               <li><div class="list-content">{{ contact.templateContent | safe }}</div></li>
             </ul>
