@@ -8,14 +8,14 @@ description: Berlin based night, label and DIY art space
 <ul class="tree">
   <li>
     <details open>
-      <summary>Events</summary>
+      <summary><h1>Events</h1></summary>
       <ul>
         {% for events in collections.events | reverse %}
         <li>
           <details>
-            <summary>{{ events.data.title }}</summary>
+            <summary><h2>{{ events.data.title }}</h2></summary>
             <ul>
-              <li><div class="list-date">{{ events.data.date | postDate }}</div></li>
+              <li><div class="list-date"><h3>{{ events.data.date | postDate }}</h3></div></li>
               <li><div class="list-content">{{ events.templateContent | safe }}</div></li>
             </ul>
           </details>
@@ -26,12 +26,12 @@ description: Berlin based night, label and DIY art space
   </li>
   <li>
     <details open>
-      <summary>Releases</summary>
+      <summary><h1>Releases</h1></summary>
       <ul>
         {% for releases in collections.releases | reverse %}
         <li>
           <details>
-            <summary>{{ releases.data.title }}</summary>
+            <summary><h2>{{ releases.data.title }}</h2></summary>
             <ul>
               <!-- <li><div class="list-date">{{ releases.data.date }}</div></li> -->
               <li><div class="list-content">{{ releases.templateContent | safe }}</div></li>
@@ -44,12 +44,12 @@ description: Berlin based night, label and DIY art space
   </li>
   <li>
     <details open>
-      <summary>Hardware</summary>
+      <summary><h1>Hardware</h1></summary>
       <ul>
         {% for hardware in collections.hardware | reverse %}
         <li>
           <details>
-            <summary>{{ hardware.data.title }}</summary>
+            <summary><h2>{{ hardware.data.title }}</h2></summary>
             <ul>
               <li><div class="list-content">{{ hardware.templateContent | safe }}</div></li>
             </ul>
@@ -61,12 +61,12 @@ description: Berlin based night, label and DIY art space
   </li>
   <li>
     <details open>
-      <summary>Recordings</summary>
+      <summary><h1>Recordings</h1></summary>
       <ul>
         {% for recordings in collections.recordings | reverse %}
         <li>
           <details>
-            <summary>{{ recordings.data.date | postDate }} / {{ recordings.data.title }}</summary>
+            <summary><h2>{{ recordings.data.date | postDate }} / {{ recordings.data.title }}</h2></summary>
             <ul>
               <!-- <li><div class="list-date">{{ recordings.data.date | postDate }}</div></li> -->
               <li><div class="list-content">{{ recordings.templateContent | safe }}</div></li>
@@ -79,12 +79,12 @@ description: Berlin based night, label and DIY art space
   </li>
   <li>
     <details open>
-      <summary>Contact</summary>
+      <summary><h1>Contact</h1></summary>
       <ul>
         {% for contact in collections.contact %}
         <li>
           <details>
-            <summary>{{ contact.data.title }}</summary>
+            <summary><h2>{{ contact.data.title }}</h2></summary>
             <ul>
               <li><div class="list-content">{{ contact.templateContent | safe }}</div></li>
             </ul>

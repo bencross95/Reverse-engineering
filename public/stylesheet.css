@@ -19,6 +19,15 @@ body {
   color: white;
 }
 
+h3 {
+  font-size: 30px;
+  font-family: NBArchitektStd Bold, monospace;
+  font-style: bold;
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 0px;
+}
+
 
 .tree {
   --spacing: 24px;
