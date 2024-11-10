@@ -1,5 +1,5 @@
 ---
-title: Links
+title: External links
 description: test
 layout: 'base.njk'
 date: 2016-01-01

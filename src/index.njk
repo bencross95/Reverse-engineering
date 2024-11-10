@@ -80,14 +80,14 @@ description: International engineering conglomerates aren't typically known for 
   </li>
   <li>
     <details open>
-      <summary><h2>Contact</h2></summary>
+      <summary><h2>links</h2></summary>
       <ul>
-        {% for contact in collections.contact %}
+        {% for links in collections.links %}
         <li>
           <details>
-            <summary><h3>{{ contact.data.title }}</h3></summary>
+            <summary><h3>{{ links.data.title }}</h3></summary>
             <ul>
-              <li><div class="list-content">{{ contact.templateContent | safe }}</div></li>
+              <li><div class="list-content">{{ links.templateContent | safe }}</div></li>
             </ul>
           </details>
         </li>
