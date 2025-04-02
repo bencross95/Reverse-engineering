@@ -17,10 +17,10 @@ document.getElementById('passwordForm').addEventListener('submit', async (event)
 
   if (data.valid) {
     validationResult.textContent = data.message;
-    validationResult.style.color = 'green';
+    validationResult.style.color = 'white';
   } else {
     validationResult.textContent = data.message;
-    validationResult.style.color = 'red';
+    validationResult.style.color = 'white';
   }
 });
 
