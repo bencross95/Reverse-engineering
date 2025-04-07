@@ -37,8 +37,8 @@ description: Vault
           const data = await response.json();
 
           if (data.valid) {
-            console.log('Password valid, redirecting to /secret-page...');
-            window.location.href = '/secret-page'; // REDIRECT TO SECRET PAGE
+            console.log('Password valid, redirecting');
+            window.location.href = '/vault/re002';
           } else {
             validationResult.textContent = data.message;
             validationResult.style.color = 'white';
