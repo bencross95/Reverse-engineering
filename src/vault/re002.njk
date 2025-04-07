@@ -1,6 +1,6 @@
 ---
 title: re002
-layout: 'base.njk'
+layout: 'vaultbase.njk'
 description: re002
 ---
 
@@ -9,15 +9,3 @@ description: re002
     <p>This is the secret content. Only authenticated users can see this.</p>
   </div>
 
-  <script>
-    console.log('All cookies on /vault/re002:', document.cookie);
-
-    if (document.cookie.includes('authenticated=true')) {
-      console.log('Authenticated cookie STRING found in document.cookie.');
-      document.getElementById('secretContent').style.display = 'block';
-    } else {
-      console.log('Authenticated cookie STRING NOT found, redirecting...');
-      window.location.href = '/vault'; // Adjust path if needed
-      document.getElementById('secretContent').style.display = 'none';
-    }
-  </script>
