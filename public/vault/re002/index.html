@@ -16,33 +16,31 @@
 
 <body>
     
-<div id="secretContent" style="display: none;">
+  <div id="secretContent">
     <h1>Secret Content</h1>
     <p>This is the secret content. Only authenticated users can see this.</p>
-</div>
+  </div>
 
-<script>
+  <script>
+    function getCookie(name) {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return parts.pop().split(';').shift();
+    }
 
-console.log('All cookies on /vault/re002:', document.cookie);
-function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
-}
+    const secretContent = document.getElementById('secretContent');
+    const isAuthenticated = getCookie('authenticated');
+    console.log('Authenticated cookie value on /vault/re002:', isAuthenticated);
 
-const secretContent = document.getElementById('secretContent');
-const isAuthenticated = getCookie('authenticated')?.trim();
-console.log('Authenticated cookie value on /secret-page:', isAuthenticated);
-
-if (isAuthenticated !== 'true' && isAuthenticated !== true) {
-    console.log('Not authenticated, redirecting to /vault...');
-    window.location.href = '/vault'; // IMMEDIATE REDIRECT IF NOT 'true'
-    secretContent.style.display = 'none'; // Ensure content is hidden
-} else {
-    console.log('User is authenticated on /secret-page.');
-    secretContent.style.display = 'block'; // Show the content
-}
-</script>
+    if (isAuthenticated !== 'true') {
+      console.log('Not authenticated, redirecting to /vault...');
+      window.location.href = '/vault'; // Ensure correct path back
+      secretContent.style.display = 'none';
+    } else {
+      console.log('User is authenticated on /vault/re002.');
+      secretContent.style.display = 'block';
+    }
+  </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script type="text/javascript" src="/animations.js"></script>
     <script type="text/javascript" src="/main.js"></script>
