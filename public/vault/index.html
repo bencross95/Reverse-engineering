@@ -25,6 +25,45 @@
     <div id="validationResult"></div>
   </form>
 </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const passwordForm = document.getElementById('passwordForm');
+      const validationResult = document.getElementById('validationResult');
+
+      passwordForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const password = document.getElementById('password').value;
+
+        const response = await fetch('/.netlify/functions/validate', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: new URLSearchParams({ password }),
+        });
+
+        try {
+          const data = await response.json();
+
+          if (data.valid) {
+            console.log('Password valid, redirecting to /secret-page...');
+            window.location.href = '/secret-page'; // REDIRECT TO SECRET PAGE
+          } else {
+            validationResult.textContent = data.message;
+            validationResult.style.color = 'white';
+            console.log('Password invalid:', data.message);
+          }
+        } catch (error) {
+          console.error('Error parsing JSON:', error);
+          validationResult.textContent = 'An error occurred during validation.';
+          validationResult.style.color = 'white';
+        }
+      });
+    });
+  </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script type="text/javascript" src="/animations.js"></script>
     <script type="text/javascript" src="/main.js"></script>
