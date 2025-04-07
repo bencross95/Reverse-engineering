@@ -4,16 +4,31 @@ layout: 'base.njk'
 description: Vault
 ---
 
+<h1>Vault</h1>
 
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+<div style="display: flex; align-items: center; gap: 80px;">
+  <p>RE002</p>
+  <p><a href="" style="color: white !important; text-decoration: underline; text-underline-offset: 4px;">Link</a></p>
   <form id="passwordForm" style="text-align: center;">
-    <label for="password">Enter Key:</label>
-    <input type="text" id="password" name="password" required>
-    <button type="submit">Submit</button>
+    <label for="password">Key:</label>
+    <div style="display: inline-flex; vertical-align: middle;">
+      <input
+        type="text"
+        id="password"
+        name="password"
+        required
+        style="margin-right: 0; padding-right: 0; border: none; background-color: white; color: black;"
+      >
+      <button
+        type="submit"
+        style="margin-left: 0; padding-left: 4; border: none; background-color: #C2C2C2; color: black; cursor: pointer;"
+      >
+        Submit
+      </button>
+    </div>
     <div id="validationResult"></div>
   </form>
 </div>
-
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
