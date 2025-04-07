@@ -18,7 +18,7 @@ document.getElementById('passwordForm').addEventListener('submit', async (event)
 
     if (data.valid) {
       console.log('Password valid, redirecting...'); // Add this for debugging
-      window.location.href = '/re002'; // Add this line to redirect
+      window.location.href = '/vault/re002'; // Add this line to redirect
     } else {
       validationResult.textContent = data.message;
       validationResult.style.color = 'white';
