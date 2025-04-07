@@ -44,7 +44,7 @@ exports.handler = async (event) => {
       body: JSON.stringify({ valid: true, message: 'Access granted' }),
       headers: {
         'Content-Type': 'application/json',
-        'Set-Cookie': 'authenticated=true; Path=/; HttpOnly; Secure; SameSite=Strict',
+        'Set-Cookie': 'authenticated=true; Path=Path=/vault/; HttpOnly; Secure; SameSite=Strict',
       },
     };
   } else {

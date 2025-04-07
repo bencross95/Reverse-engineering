@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>re002</title>
-    <meta name="description" content="Vault">
-    <meta property="og:description" content="Vault" />
+    <meta name="description" content="re002">
+    <meta property="og:description" content="re002" />
     <meta property="og:image" content="https://reverseengineering.software/assets/images/ogimg.png" />
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
@@ -22,25 +22,27 @@
 </div>
 
 <script>
-    function getCookie(name) {
-        const value = `; ${document.cookie}`;
-        const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return parts.pop().split(';').shift();
-    }
 
-    const secretContent = document.getElementById('secretContent');
-    const isAuthenticated = getCookie('authenticated');
-    console.log('Authenticated cookie value on /secret-page:', isAuthenticated);
+console.log('All cookies on /vault/re002:', document.cookie);
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
 
-    if (isAuthenticated === 'true') {
-        console.log('User is authenticated on /secret-page.');
-        secretContent.style.display = 'block';
-    } else {
-        console.log('Not authenticated, redirecting to /vault...');
-        window.location.href = '/vault';
-    }
+const secretContent = document.getElementById('secretContent');
+const isAuthenticated = getCookie('authenticated')?.trim();
+console.log('Authenticated cookie value on /secret-page:', isAuthenticated);
+
+if (isAuthenticated !== 'true' && isAuthenticated !== true) {
+    console.log('Not authenticated, redirecting to /vault...');
+    window.location.href = '/vault'; // IMMEDIATE REDIRECT IF NOT 'true'
+    secretContent.style.display = 'none'; // Ensure content is hidden
+} else {
+    console.log('User is authenticated on /secret-page.');
+    secretContent.style.display = 'block'; // Show the content
+}
 </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script type="text/javascript" src="/animations.js"></script>
     <script type="text/javascript" src="/main.js"></script>
