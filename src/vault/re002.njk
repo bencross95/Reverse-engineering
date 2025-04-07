@@ -1,0 +1,35 @@
+---
+title: re002
+layout: 'base.njk'
+description: Vault
+---
+
+  <div id="secretContent" style="display: none;">
+    <h1>Secret Content</h1>
+    <p>This is the secret content. Only authenticated users can see this.</p>
+  </div>
+
+  <div id="loginMessage">
+    <p>Please log in to see the secret content.</p>
+  </div>
+
+<script>
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+const secretContent = document.getElementById('secretContent');
+const loginMessage = document.getElementById('loginMessage');
+const isAuthenticated = getCookie('authenticated');
+
+if (isAuthenticated === 'true') {
+    secretContent.style.display = 'block';
+    loginMessage.style.display = 'none';
+} else {
+    secretContent.style.display = 'none';
+    loginMessage.style.display = 'block';
+    window.location.href = '/password'; //redirect back to password page.
+}
+</script>

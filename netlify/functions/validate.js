@@ -42,7 +42,10 @@ exports.handler = async (event) => {
     return {
       statusCode: 200,
       body: JSON.stringify({ valid: true, message: 'Access granted' }),
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'Set-Cookie': 'authenticated=true; Path=/; HttpOnly; Secure; SameSite=Strict',
+      },
     };
   } else {
     return {
