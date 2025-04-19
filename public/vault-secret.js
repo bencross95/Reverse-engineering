@@ -20,6 +20,6 @@ if (isAuthenticated) {
     }
 } else {
     console.log('Authenticated cookie NOT found (null or undefined), redirecting...');
-    // window.location.href = '/vault';
-    // secretContent.style.display = 'none';
+    window.location.href = '/vault';
+    secretContent.style.display = 'none';
 }
