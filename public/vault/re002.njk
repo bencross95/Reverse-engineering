@@ -4,8 +4,40 @@ layout: 'vaultbase.njk'
 description: re002
 ---
 
-  <div id="secretContent">
-    <h1>re002</h1>
-    <p>DEBUG: Only authenticated users can see this.</p>
-  </div>
+<div id="secretContent">
+  <h1>re002</h1>
+  <p>Status: authenticated user</p>
+</div>
 
+<ul class="tree">
+  <li>
+    <details>
+      <summary><h1>Info</h1></summary>
+      <ul>
+        <li>
+          <div class="list-content">Content</div>
+        </li>
+      </ul>
+    </details>
+  </li>
+  <li>
+    <details>
+      <summary><h1>Audio</h1></summary>
+      <ul>
+        <li>
+          <div class="list-content">text</div>
+        </li>
+      </ul>
+    </details>
+  </li>
+    <li>
+    <details>
+      <summary><h1>Media</h1></summary>
+      <ul>
+        <li>
+          <div class="list-content">text</div>
+        </li>
+      </ul>
+    </details>
+  </li>
+</ul>
