@@ -8,14 +8,21 @@ const secretContent = document.getElementById('secretContent');
 const isAuthenticated = getCookie('authenticated');
 console.log('Authenticated cookie value on /vault/re002:', isAuthenticated);
 
-if (isAuthenticated !== 'true') {
-    console.log('Not authenticated, redirecting to /vault/vault...');
-    window.location.href = '/vault'; // Ensure correct path back
-    secretContent.style.display = 'none';
+if (isAuthenticated) {
+    console.log('Authenticated cookie FOUND (has a value):', isAuthenticated);
+    if (isAuthenticated === 'true') {
+        console.log('Authenticated cookie value is exactly "true".');
+        secretContent.style.display = 'block';
+    } else {
+        console.log('Authenticated cookie value is NOT exactly "true":', isAuthenticated);
+        console.log('Redirecting due to value mismatch...');
+        window.location.href = '/vault';
+        secretContent.style.display = 'none';
+    }
 } else {
-    console.log('User is authenticated on /vault/re002.');
-    secretContent.style.display = 'block';
+    console.log('Authenticated cookie NOT found (null or undefined), redirecting...');
+    window.location.href = '/vault';
+    secretContent.style.display = 'none';
 }
-
 
 console.log('Script loaded for /vault/re002');
