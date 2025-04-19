@@ -10,7 +10,7 @@ console.log('Authenticated cookie value on /vault/re002:', isAuthenticated);
 
 if (isAuthenticated !== 'true') {
     console.log('Not authenticated, redirecting to /vault/vault...');
-    window.location.href = '/vault/vault'; // Ensure correct path back
+    window.location.href = '/vault'; // Ensure correct path back
     secretContent.style.display = 'none';
 } else {
     console.log('User is authenticated on /vault/re002.');
