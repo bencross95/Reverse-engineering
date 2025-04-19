@@ -6,7 +6,6 @@ function getCookie(name) {
 
 const secretContent = document.getElementById('secretContent');
 const isAuthenticated = getCookie('authenticated');
-console.log('Authenticated cookie value on /vault/re002:', isAuthenticated);
 
 if (isAuthenticated) {
     console.log('Authenticated cookie FOUND (has a value):', isAuthenticated);
