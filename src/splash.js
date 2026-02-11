@@ -6,7 +6,7 @@
 
   var chars = ['\\', 'i', '/', '-'];
   var totalFrames = 12; // 3 full rounds of 4 characters
-  var duration = 2250; // ~187ms per frame, 3 full rounds
+  var duration = 1150; // ~104ms per frame, 3 full rounds
   var interval = duration / totalFrames;
   var frame = 0;
 
