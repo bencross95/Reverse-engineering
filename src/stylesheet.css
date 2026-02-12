@@ -3,6 +3,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Custom scrollbar - white rectangle */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0057FF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 0;
+}
+
+/* Firefox */
+html {
+  scrollbar-color: white #0057FF;
+  scrollbar-width: thin;
+}
+
 @font-face {
   font-family: NBArchitektStd Bold;
   src: url('/assets/fonts/NBArchitektStd-Bold.woff2') format('woff2');
